@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funktio</title>
+</head>
+<body>
+<p id='demo'></p>
+    <script>
+        const a = prompt('Anna luku');
+        function fib(n) {
+
+            const result = [0, 1];
+            for (let i = 2; i <= n; i++) {
+                const a = (i - 1);
+                const b = (i - 2);
+                result.push(a + b);
+            }
+            console.log(result);
+            return result[n];
+
+        }
+
+        document.getElementById("demo").innerHTML = (fib(a));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funktio</title>
+</head>
+<body>
+Gallon
+
+<p id="liter"></p>
+<br>
+
+<script>
+
+    const gallonat = prompt('Anna gallonamäärä')
+
+    let l = document.getElementById('liter');
+    l.innerHTML = myFunction(gallonat);
+
+    function myFunction(gallon){
+            return gallon * 3.785;
+    }
+    </script>
+</body>
+</html>

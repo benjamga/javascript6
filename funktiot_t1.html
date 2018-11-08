@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funktiot</title>
+</head>
+<body>
+Gallon
+<br>
+<textarea id="gallon"></textarea>
+<br>
+
+Liter
+<br>
+<textarea id='liter'></textarea>
+<br>
+
+<button onClick="myFunction()"> Convert! </button>
+<script>
+        function myFunction(){
+            let l = document.getElementById('liter');
+            let liter = l.value;
+
+            let g = document.getElementById('gallon');
+            let gallon = g.value;
+
+            if(gallon == ''){
+                g.value = liter / 3.785;
+            }
+            else if (liter == ''){
+                l.value = gallon * 3.785;
+            }
+        }
+    </script>
+</body>
+</html>
